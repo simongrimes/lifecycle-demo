@@ -27,7 +27,7 @@ describe('lifecycle-demo', () => {
     // Button Click event is captured.
     expect(buttonClickEvent).toHaveReceivedEvent();
 
-    // Lifecycle events are not captured.
+    // Lifecycle events are not captured. (Unrem below and test will fail).
     // expect(connectedCallbackEvent).toHaveReceivedEvent();
     // expect(componentWillLoadEvent).toHaveReceivedEvent();
     // expect(componentDidLoadEvent).toHaveReceivedEvent();
