@@ -28,9 +28,9 @@ describe('lifecycle-demo', () => {
     expect(buttonClickEvent).toHaveReceivedEvent();
 
     // Lifecycle events are not captured. (Unrem below and test will fail).
-    // expect(connectedCallbackEvent).toHaveReceivedEvent();
-    // expect(componentWillLoadEvent).toHaveReceivedEvent();
-    // expect(componentDidLoadEvent).toHaveReceivedEvent();
-    // expect(componentWillRenderEvent).toHaveReceivedEvent();
+    expect(connectedCallbackEvent).toHaveReceivedEvent();
+    expect(componentWillLoadEvent).toHaveReceivedEvent();
+    expect(componentDidLoadEvent).toHaveReceivedEvent();
+    expect(componentWillRenderEvent).toHaveReceivedEvent();
   });
 });

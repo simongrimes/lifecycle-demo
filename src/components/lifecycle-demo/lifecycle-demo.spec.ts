@@ -25,6 +25,6 @@ describe('lifecycle-demo', () => {
     expect(componentWillRenderEvent).toHaveBeenCalledTimes(1);
 
     // Note - componentDidLoad doesn't fire. (Unrem below and test will fail).
-    // expect(componentDidLoadEvent).toHaveBeenCalledTimes(1);
+    expect(componentDidLoadEvent).toHaveBeenCalledTimes(1);
   });
 });
